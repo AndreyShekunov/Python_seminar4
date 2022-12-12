@@ -7,17 +7,21 @@
 
 import random
 
+# запись в файл
 def write_file(st):
     with open('file_sem4_hw4.txt', 'w') as data:
         data.write(st)
 
+# создание случайного числа от 0 до 100
 def rnd():
     return random.randint(0,101)
 
+# создание коэффициентов многочлена
 def create_mn(k):
     lst = [rnd() for i in range(k+1)]
     return lst
-    
+
+# создание многочлена в виде строки    
 def create_str(sp):
     lst= sp[::-1]
     wr = ''
