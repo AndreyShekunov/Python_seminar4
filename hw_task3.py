@@ -3,6 +3,7 @@
 # Например:
 # - Ввод:[1,1,2,4,5,6,7,7,8], результат: [2,4,5,6,8]
 
+# первый вариант
 lst = [1,1,2,4,5,6,7,7,8]
 uniq = [] # создаем список для уникальных чисел uniq
 for num in range(len(lst)): # пробегаемся по списку lst
@@ -10,5 +11,14 @@ for num in range(len(lst)): # пробегаемся по списку lst
         continue # то делаем переход на следующее число
     else:
         uniq.append(lst[num]) # иначе добавляем число в список uniq
+print(f'Ввод: {lst}')
+print(f'Вывод: {uniq}')
+
+# второй вариант
+lst = [1,1,2,4,5,6,7,7,8]
+uniq = []
+for num in lst:
+    if lst.count(num) < 2:
+        uniq.append(num)
 print(f'Ввод: {lst}')
 print(f'Вывод: {uniq}')
