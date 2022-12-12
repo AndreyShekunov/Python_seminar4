@@ -6,7 +6,7 @@
 lst = [1,1,2,4,5,6,7,7,8]
 uniq = [] # создаем список для уникальных чисел uniq
 for num in range(len(lst)): # пробегаемся по списку lst
-    if lst[num] in uniq: # если число есть в списке 
+    if lst[num] in uniq: # если число есть в списке uniq
         continue # то делаем переход на следующее число
     else:
         uniq.append(lst[num]) # иначе добавляем число в список uniq
